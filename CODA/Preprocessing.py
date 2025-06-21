@@ -6,16 +6,7 @@ import bbknn
 
 
 def preprocessing(ST1,ST2,integrate_method='combat',if_log='True'):
-    '''
-    Preprocess and integrate the ST slices.
 
-    Parameters:
-        - ST1,ST2: Spatial transcriptomics with count matrix and spatial coordinates
-        - integrate_method: Method to be chosen to integrate the gene expression of two ST slices ('combat' or 'bbknn')
-        
-    Return:
-        - 
-    '''
     gene1 = set(ST1.var_names)
     gene2 = set(ST2.var_names)
     common_gene = gene1.intersection(gene2)
@@ -54,9 +45,7 @@ def preprocessing(ST1,ST2,integrate_method='combat',if_log='True'):
     return  adata_rep1,adata_rep2
 
 def dimension_reduction(ST1,ST2,reduction_dim=3,method='umap'):
-    '''
-    
-    '''
+
     adata = ad.concat([ST1,ST2],label='batch',keys=['1','2'],index_unique='-')
     sc.pp.neighbors(adata)
     sc.tl.umap(adata, n_components=reduction_dim)
