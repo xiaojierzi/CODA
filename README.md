@@ -5,7 +5,7 @@ Read the full preprint here: [https://www.biorxiv.org/content/10.1101/2025.06.05
 
 CODA is a computational framework designed for nonlinear alignment and spatial analysis across multiple spatial transcriptomics (ST) datasets. CODA simultaneously addresses the challenges of spatial misalignment and spatial gene variation by introducing:
 
-- Global rigid and local nonlinear alignment using a two-stage strategy
+- Global rigid and local nonlinear alignment in the embedding space
 - Common domain identification through transformer-based keypoint matching
 - A spatial cross-correlation metric to detect spatially consistent genes (SCGs) and spatially differential genes (SDGs)
 
