@@ -14,5 +14,11 @@ CODA supports cross-platform datasets (e.g., 10X Visium, MERFISH) and enables ef
 ### Overview of CODA
 ![avatar](Pipeline/pipeline.png)
 
-## Requirements and Installation
+## Development Status and Tutorials
+We are currently finalizing the packaging and testing of CODA to support streamlined installation and broader compatibility. A PyPI release is planned in the near future.
 
+At present, we have released Tutorial 2, which demonstrates the alignment and spatial analysis functionalities of CODA. Additional tutorials—Tutorial 1: Alignment, Tutorial 3: Common Domain Identification, and more—are under active development.
+
+Future updates will also enhance compatibility with other spatial transcriptomics toolkits and data formats.
+
+Stay tuned for upcoming releases and documentation updates.
