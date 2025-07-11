@@ -853,3 +853,7 @@ class LightGlue(nn.Module):
         """scaled confidence threshold"""
         threshold = 0.8 + 0.1 * np.exp(-4.0 * layer_index / self.conf.n_layers)
         return np.clip(threshold, 0, 1)
+
+
+
+
