@@ -31,11 +31,6 @@ CODA supports cross-platform datasets (e.g., 10X Visium, MERFISH) and enables ef
 [![torch 2.4.0](https://img.shields.io/badge/torch-2.4.0-brightgreen)](https://pytorch.org/)
 [![torchvision 0.19.0](https://img.shields.io/badge/torchvision-0.19.0-brightgreen)](https://pytorch.org/)
 
-You can install them all using the following command:
-
-```bash
-pip install -r requirements.txt
-```
 
 ### Create and activate Python environment
 It is recommended to create a virtual environment for using CODA to avoid any conflicts with existing Python installations. You can create a virtual environment using Anaconda:
@@ -76,6 +71,12 @@ pip install icoda
 ```
 
 This command will download and install the CODA package from PyPI, making it ready to use in your Python environment.
+
+To install these dependencies, run the following command:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Development Status and Tutorials
 At present, we have released Tutorial 1, which demonstrates the alignment and spatial analysis functionalities of CODA. 
