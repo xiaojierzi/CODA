@@ -16,6 +16,21 @@ CODA supports cross-platform datasets (e.g., 10X Visium, MERFISH) and enables ef
 
 ## Requirements and Installation
 [![python >=3.9](https://img.shields.io/badge/python-%3E%3D3.9-brightgreen)](https://www.python.org/)
+[![numpy 1.26.3](https://img.shields.io/badge/numpy-1.26.3-green)](https://pypi.org/project/numpy/)
+[![pandas 2.2.2](https://img.shields.io/badge/pandas-2.2.2-yellowgreen)](https://pypi.org/project/pandas/)
+[![scipy 1.13.1](https://img.shields.io/badge/scipy-1.13.1-blue)](https://pypi.org/project/scipy/)
+[![matplotlib 3.9.4](https://img.shields.io/badge/matplotlib-3.9.4-yellow)](https://pypi.org/project/matplotlib/)
+[![Pillow 10.2.0](https://img.shields.io/badge/Pillow-10.2.0-orange)](https://pypi.org/project/Pillow/)
+[![scikit-image 0.24.0](https://img.shields.io/badge/scikit--image-0.24.0-red)](https://pypi.org/project/scikit-image/)
+[![opencv-python 4.10.0.84](https://img.shields.io/badge/opencv--python-4.10.0.84-lightgrey)](https://pypi.org/project/opencv-python/)
+[![anndata 0.10.8](https://img.shields.io/badge/anndata-0.10.8-blue)](https://pypi.org/project/anndata/)
+[![scanpy 1.10.2](https://img.shields.io/badge/scanpy-1.10.2-red)](https://pypi.org/project/scanpy/)
+[![bbknn 1.6.0](https://img.shields.io/badge/bbknn-1.6.0-lightblue)](https://pypi.org/project/bbknn/)
+[![shapely 2.0.6](https://img.shields.io/badge/shapely-2.0.6-lightgrey)](https://pypi.org/project/shapely/)
+[![kornia 0.7.3](https://img.shields.io/badge/kornia-0.7.3-green)](https://pypi.org/project/kornia/)
+[![torch 2.4.0](https://img.shields.io/badge/torch-2.4.0-brightgreen)](https://pytorch.org/)
+[![torchvision 0.19.0](https://img.shields.io/badge/torchvision-0.19.0-brightgreen)](https://pytorch.org/)
+
 
 ### Create and activate Python environment
 It is recommended to create a virtual environment for using CODA to avoid any conflicts with existing Python installations. You can create a virtual environment using Anaconda:
