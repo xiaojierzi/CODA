@@ -72,7 +72,7 @@ pip install icoda
 
 This command will download and install the CODA package from PyPI, making it ready to use in your Python environment.
 
-To install these dependencies, run the following command:
+To install the dependencies, run the following command:
 
 ```bash
 pip install -r requirements.txt
