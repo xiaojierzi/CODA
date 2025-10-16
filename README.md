@@ -85,5 +85,5 @@ For the tutorial, you can download the necessary data of tutorial 2 from [this l
 
 Additional tutorials and expanded documentation are under active development. Future updates will enhance compatibility with other spatial transcriptomics toolkits and data formats.
 
-Stay tuned for upcoming releases and improvements.
+We plan to release an improved version of CODA on 2025-10-31 (UTC+9).
 
