@@ -1,3 +1,9 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright 2025 Yecheng Tan
+# Portions derived from "LightGlue: Local Feature Matching at Light Speed"
+# (c) 2023 Philipp Lindenberger, Paul-Edouard Sarlin, Marc Pollefeys
+# See third_party/lightglue/LICENSE and NOTICE for original license and notices.
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
