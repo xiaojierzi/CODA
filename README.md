@@ -3,13 +3,15 @@
 Our preprint **"Integrative cross-sample alignment and spatially differential gene analysis for spatial transcriptomics"** is now available on **bioRxiv**. 
 Read the full preprint here: [https://www.biorxiv.org/content/10.1101/2025.06.05.653933](https://www.biorxiv.org/content/10.1101/2025.06.05.653933)
 
-CODA is a computational framework designed for nonlinear alignment and spatial analysis across multiple spatial transcriptomics (ST) datasets. CODA simultaneously addresses the challenges of spatial misalignment and spatial gene variation by introducing:
+### What CODA does?
 
-- Global rigid and local nonlinear alignment in the embedding space
-- Common domain identification through transformer-based keypoint matching
-- A spatial cross-correlation metric to detect spatially consistent genes (SCGs) and spatially differential genes (SDGs)
+CODA is a computational framework designed for nonlinear alignment and spatial analysis across multiple spatial transcriptomics (ST) datasets. It jointly addresses spatial misalignment and spatial gene variation via:
 
-CODA supports cross-platform datasets (e.g., 10X Visium, MERFISH) and enables efficient and scalable alignment and analysis across biological replicates, technologies, and conditions.
+* **Two-stage alignment:** global (**Mode I** rigid / **Mode II** similarity / **Mode III** weak-affine) followed by local diffeomorphic refinement (**LDDMM**).
+* **Common-domain identification:** transformer-assisted keypoint/domain matching to restrict comparisons to biologically comparable regions.
+* **Cross-sample spatial cross-correlation index :** detects spatially consistent genes (**SCGs**) and spatially differential genes (**SDGs**).
+
+CODA supports cross-platform data (e.g., 10x Visium, MERFISH) and provides efficient, scalable alignment and analysis across replicates, technologies, and conditions. It also includes **3D reconstruction** for serial sections.
 
 ### Overview of CODA
 ![avatar](Pipeline/pipeline.png)
@@ -27,6 +29,7 @@ CODA supports cross-platform datasets (e.g., 10X Visium, MERFISH) and enables ef
 [![scanpy 1.10.2](https://img.shields.io/badge/scanpy-1.10.2-red)](https://pypi.org/project/scanpy/)
 [![bbknn 1.6.0](https://img.shields.io/badge/bbknn-1.6.0-lightblue)](https://pypi.org/project/bbknn/)
 [![shapely 2.0.6](https://img.shields.io/badge/shapely-2.0.6-lightgrey)](https://pypi.org/project/shapely/)
+[![louvain 0.8.2](https://img.shields.io/badge/louvain-0.8.2-purple)](https://pypi.org/project/louvain/)
 [![kornia 0.7.3](https://img.shields.io/badge/kornia-0.7.3-green)](https://pypi.org/project/kornia/)
 [![torch 2.4.0](https://img.shields.io/badge/torch-2.4.0-brightgreen)](https://pytorch.org/)
 [![torchvision 0.19.0](https://img.shields.io/badge/torchvision-0.19.0-brightgreen)](https://pytorch.org/)
@@ -67,7 +70,7 @@ Note: This is just an example. Please refer to the PyTorch website for the comma
 To install CODA, simply use pip with the following command:
 
 ```bash
-pip install icoda
+pip install icoda == 2.0.0
 ```
 
 This command will download and install the CODA package from PyPI, making it ready to use in your Python environment.
@@ -78,12 +81,33 @@ To install the dependencies, run the following command:
 pip install -r requirements.txt
 ```
 
-## Development Status and Tutorials
-At present, we have released Tutorial 1, which demonstrates the alignment and spatial analysis functionalities of CODA. 
-Tutorial 2, focusing on common domain identification, is also available.
-For the tutorial, you can download the necessary data of tutorial 2 from [this link](https://drive.google.com/drive/folders/1mxpS6pA3uwfZzkg50FlfIEcMMfSsZC9Y?usp=sharing). 
+## Development Status & Tutorials
 
-Additional tutorials and expanded documentation are under active development. Future updates will enhance compatibility with other spatial transcriptomics toolkits and data formats.
+**Major update (2025-10-31, UTC+8):** CODA is fully upgraded — the PyPI package is now **`icoda` v2.0.0**.
 
-We plan to release an improved version of CODA on 2025-10-31 (UTC+9).
+### What’s new in 2.0.0
+1. Cleaner, more user-friendly APIs and utilities.
+2. Overhauled **global alignment** with better accuracy and three modes:
+   - **G1** (rigid), **G2** (similarity), **G2+** (weak-affine).
+3. Built-in **3D reconstruction** for serial sections.
+4. Interoperation with **STAligner** (load its `.h5ad` outputs and align with CODA).
+5. Five **rewritten tutorials** (T1–T5) with runnable notebooks and sample-data links.
+
+
+### Tutorials
+
+* **T1**: Quickstart & reproducibility (end-to-end alignment + spatial analysis)
+* **T2**: Calculation of spatial cross-correlation index
+* **T3**: 3D reconstruction from serial sections
+* **T4**: Global alignment modes (when to use G1 / G2 / G2+)
+* **T5**: Using **STAligner** outputs with CODA
+
+> Each tutorial notebook includes a **sample-data link** at the top.
+
+### Contact
+
+Feedback and bug reports are welcome. **Email is preferred:** `yctan21@m.fudan.edu.cn`
+(GitHub Issues may not be monitored immediately.)
+
+**Note on preprint:** We will update our preprint to reflect v2.0.0 changes at an appropriate time.
 
