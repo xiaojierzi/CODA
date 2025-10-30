@@ -12,7 +12,7 @@ CODA is a computational framework designed for nonlinear alignment and spatial a
 CODA supports cross-platform datasets (e.g., 10X Visium, MERFISH) and enables efficient and scalable alignment and analysis across biological replicates, technologies, and conditions.
 
 ### Overview of CODA
-![avatar](Pipeline/pipeline.png)
+
 
 ## Requirements and Installation
 [![python >=3.9](https://img.shields.io/badge/python-%3E%3D3.9-brightgreen)](https://www.python.org/)
