@@ -88,7 +88,7 @@ pip install -r requirements.txt
 ### What’s new in 2.0.0
 1. Cleaner, more user-friendly APIs and utilities.
 2. Overhauled **global alignment** with better accuracy and three modes:
-   - **G1** (rigid), **G2** (similarity), **G2+** (weak-affine).
+   - **Mode I** (rigid), **Mode II** (similarity), **Mode III** (weak-affine).
 3. Built-in **3D reconstruction** for serial sections.
 4. Interoperation with **STAligner** (load its `.h5ad` outputs and align with CODA).
 5. Five **rewritten tutorials** (T1–T5) with runnable notebooks and sample-data links.
