@@ -99,7 +99,7 @@ pip install -r requirements.txt
 * **T1**: Quickstart & reproducibility (end-to-end alignment + spatial analysis)
 * **T2**: Calculation of spatial cross-correlation index
 * **T3**: 3D reconstruction from serial sections
-* **T4**: Global alignment modes (when to use G1 / G2 / G2+)
+* **T4**: Global alignment modes (when to use Mode I / Mode II / Mode III)
 * **T5**: Using **STAligner** outputs with CODA
 
 > Each tutorial notebook includes a **sample-data link** at the top.
