@@ -105,8 +105,3 @@ pip install -r requirements.txt
 * **T5**: Using **STAligner** outputs with CODA
 
 > Each tutorial notebook includes a **sample-data link** at the top.
-
-### Contact
-
-Feedback and bug reports are welcome. **Email is preferred:** `yctan21@m.fudan.edu.cn`
-(GitHub Issues may not be monitored immediately.)
