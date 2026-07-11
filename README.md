@@ -1,7 +1,9 @@
 # CODA
 ## Integrative cross-sample alignment and spatially differential gene analysis for spatial transcriptomics
-Our preprint **"Integrative cross-sample alignment and spatially differential gene analysis for spatial transcriptomics"** is now available on **bioRxiv**. 
-Read the full preprint here: [https://www.biorxiv.org/content/10.1101/2025.06.05.653933](https://www.biorxiv.org/content/10.1101/2025.06.05.653933)
+The CODA paper has been published as an open-access article in **Nature Communications**:
+
+> **Tan, Y., Wang, Z., Wang, A. et al.** Integrative cross-sample alignment and spatially differential gene analysis for spatial transcriptomics. *Nature Communications* **17**, 5577 (2026).  
+> [https://doi.org/10.1038/s41467-026-72862-2](https://doi.org/10.1038/s41467-026-72862-2)
 
 ### What CODA does?
 
@@ -108,6 +110,3 @@ pip install -r requirements.txt
 
 Feedback and bug reports are welcome. **Email is preferred:** `yctan21@m.fudan.edu.cn`
 (GitHub Issues may not be monitored immediately.)
-
-**Note on preprint:** We will update our preprint to reflect v2.0.0 changes at an appropriate time.
-
